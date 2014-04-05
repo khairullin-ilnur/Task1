@@ -5,4 +5,23 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
 
+    <servlet>
+        <servlet-name>DataProcesser</servlet-name>
+        <servlet-class>ru.kpfu.itis.servlet.DataProcesser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateTable</servlet-name>
+        <servlet-class>ru.kpfu.itis.servlet.CreateTable</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DataProcesser</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateTable</servlet-name>
+        <url-pattern>/table</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
